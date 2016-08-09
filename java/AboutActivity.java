@@ -12,14 +12,13 @@ import android.widget.Button;
  */
 public class AboutActivity extends AppCompatActivity {
 
-    public static int bgdCheck = 0;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+        backButton();
 
-        Button back = (Button)findViewById(R.id.btnBack);
+        /*Button back = (Button)findViewById(R.id.btnBack);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +27,16 @@ public class AboutActivity extends AppCompatActivity {
                 bgdCheck = 1;
                 finish();
             }
+        });*/
+    }
+    public void backButton(){
+        Button back = (Button)findViewById(R.id.btnBack);
+        back.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(AboutActivity.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            }
         });
-
     }
 }
