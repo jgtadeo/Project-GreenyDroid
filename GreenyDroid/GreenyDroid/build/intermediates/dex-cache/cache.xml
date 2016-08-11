@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7bedd2e93da368fcfef39bc2c53a3aa173b442ca">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7127b141bac3442ac6424fe38ca1ec9b81984e70\classes.dex" />
+    </item>
+
+</items>
