@@ -52,6 +52,10 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\hospital2.png"
     },
     {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\goodjob.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\goodjob.png"
+    },
+    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
