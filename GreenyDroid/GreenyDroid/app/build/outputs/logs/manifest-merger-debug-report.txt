@@ -1,6 +1,10 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:2:1-24:12
+=======
+ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:2:1-25:12
+>>>>>>> origin/master
 	package
 		ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml
@@ -14,7 +18,11 @@ ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDro
 		INJECTED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml
 application
+<<<<<<< HEAD
 ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:5:5-22:19
+=======
+ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:5:5-23:19
+>>>>>>> origin/master
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -62,6 +70,13 @@ activity#ph.edu.apc.greenydroid.IntroductionActivity
 ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:21:9-67
 	android:name
 		ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:21:19-55
+<<<<<<< HEAD
+=======
+activity#ph.edu.apc.greenydroid.ACupcakeStoryActivity
+ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:22:9-68
+	android:name
+		ADDED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml:22:19-56
+>>>>>>> origin/master
 uses-sdk
 INJECTED from C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78

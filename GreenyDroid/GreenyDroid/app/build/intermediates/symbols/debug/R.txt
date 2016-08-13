@@ -461,6 +461,7 @@ int drawable gingerbread 0x7f020052
 int drawable greenydroid 0x7f020053
 int drawable hello 0x7f020054
 int drawable honeycomb 0x7f020055
+<<<<<<< HEAD
 int drawable icecreamsandwich 0x7f020056
 int drawable jellybean 0x7f020057
 int drawable kitkat 0x7f020058
@@ -468,6 +469,19 @@ int drawable lollipop 0x7f020059
 int drawable marshmallow 0x7f02005a
 int drawable notification_template_icon_bg 0x7f02005b
 int id action0 0x7f0d0059
+=======
+int drawable hospital 0x7f020056
+int drawable hospital2 0x7f020057
+int drawable hospital3 0x7f020058
+int drawable icecreamsandwich 0x7f020059
+int drawable introductionbackground 0x7f02005a
+int drawable jellybean 0x7f02005b
+int drawable kitkat 0x7f02005c
+int drawable lollipop 0x7f02005d
+int drawable marshmallow 0x7f02005e
+int drawable notification_template_icon_bg 0x7f02005f
+int id action0 0x7f0d005b
+>>>>>>> origin/master
 int id action_bar 0x7f0d0041
 int id action_bar_activity_content 0x7f0d0000
 int id action_bar_container 0x7f0d0040
@@ -476,7 +490,11 @@ int id action_bar_spinner 0x7f0d0001
 int id action_bar_subtitle 0x7f0d0022
 int id action_bar_title 0x7f0d0021
 int id action_context_bar 0x7f0d0042
+<<<<<<< HEAD
 int id action_divider 0x7f0d005d
+=======
+int id action_divider 0x7f0d005f
+>>>>>>> origin/master
 int id action_menu_divider 0x7f0d0002
 int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d003e
@@ -486,6 +504,7 @@ int id activity_chooser_view_content 0x7f0d0024
 int id alertTitle 0x7f0d0030
 int id always 0x7f0d001c
 int id beginning 0x7f0d0019
+<<<<<<< HEAD
 int id btnAbout 0x7f0d0055
 int id btnBack 0x7f0d0050
 int id btnContinue 0x7f0d0057
@@ -496,6 +515,19 @@ int id cancel_action 0x7f0d005a
 int id checkBox 0x7f0d0056
 int id checkbox 0x7f0d0039
 int id chronometer 0x7f0d0060
+=======
+int id btnAbout 0x7f0d0057
+int id btnBack 0x7f0d0050
+int id btnBegin 0x7f0d0054
+int id btnContinue 0x7f0d0059
+int id btnSetting 0x7f0d0056
+int id btnStart 0x7f0d0055
+int id buttonPanel 0x7f0d002b
+int id cancel_action 0x7f0d005c
+int id checkBox 0x7f0d0058
+int id checkbox 0x7f0d0039
+int id chronometer 0x7f0d0062
+>>>>>>> origin/master
 int id collapseActionView 0x7f0d001d
 int id contentPanel 0x7f0d0031
 int id custom 0x7f0d0037
@@ -503,10 +535,17 @@ int id customPanel 0x7f0d0036
 int id decor_content_parent 0x7f0d003f
 int id default_activity_button 0x7f0d0027
 int id disableHome 0x7f0d000c
+<<<<<<< HEAD
 int id editName 0x7f0d0058
 int id edit_query 0x7f0d0043
 int id end 0x7f0d001a
 int id end_padder 0x7f0d0065
+=======
+int id editName 0x7f0d005a
+int id edit_query 0x7f0d0043
+int id end 0x7f0d001a
+int id end_padder 0x7f0d0067
+>>>>>>> origin/master
 int id expand_activities_button 0x7f0d0025
 int id expanded_menu 0x7f0d0038
 int id firstpar 0x7f0d0051
@@ -515,12 +554,22 @@ int id homeAsUp 0x7f0d000d
 int id icon 0x7f0d0029
 int id ifRoom 0x7f0d001e
 int id image 0x7f0d0026
+<<<<<<< HEAD
 int id info 0x7f0d0064
 int id line1 0x7f0d005e
 int id line3 0x7f0d0062
 int id listMode 0x7f0d0009
 int id list_item 0x7f0d0028
 int id media_actions 0x7f0d005c
+=======
+int id imageView 0x7f0d0053
+int id info 0x7f0d0066
+int id line1 0x7f0d0060
+int id line3 0x7f0d0064
+int id listMode 0x7f0d0009
+int id list_item 0x7f0d0028
+int id media_actions 0x7f0d005e
+>>>>>>> origin/master
 int id middle 0x7f0d001b
 int id multiply 0x7f0d0014
 int id never 0x7f0d001f
@@ -555,6 +604,7 @@ int id split_action_bar 0x7f0d0007
 int id src_atop 0x7f0d0016
 int id src_in 0x7f0d0017
 int id src_over 0x7f0d0018
+<<<<<<< HEAD
 int id status_bar_latest_event_content 0x7f0d005b
 int id submit_area 0x7f0d004c
 int id tabMode 0x7f0d000b
@@ -562,6 +612,15 @@ int id text 0x7f0d0063
 int id text2 0x7f0d0061
 int id textSpacerNoButtons 0x7f0d0034
 int id time 0x7f0d005f
+=======
+int id status_bar_latest_event_content 0x7f0d005d
+int id submit_area 0x7f0d004c
+int id tabMode 0x7f0d000b
+int id text 0x7f0d0065
+int id text2 0x7f0d0063
+int id textSpacerNoButtons 0x7f0d0034
+int id time 0x7f0d0061
+>>>>>>> origin/master
 int id title 0x7f0d002a
 int id title_template 0x7f0d002f
 int id topPanel 0x7f0d002e
@@ -600,6 +659,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f040016
 int layout abc_search_view 0x7f040017
 int layout abc_select_dialog_material 0x7f040018
 int layout activity_about 0x7f040019
+<<<<<<< HEAD
 int layout activity_introduction 0x7f04001a
 int layout activity_main 0x7f04001b
 int layout activity_setting 0x7f04001c
@@ -616,6 +676,25 @@ int layout select_dialog_item_material 0x7f040026
 int layout select_dialog_multichoice_material 0x7f040027
 int layout select_dialog_singlechoice_material 0x7f040028
 int layout support_simple_spinner_dropdown_item 0x7f040029
+=======
+int layout activity_acupcakestory 0x7f04001a
+int layout activity_introduction 0x7f04001b
+int layout activity_main 0x7f04001c
+int layout activity_setting 0x7f04001d
+int layout activity_start 0x7f04001e
+int layout notification_media_action 0x7f04001f
+int layout notification_media_cancel_action 0x7f040020
+int layout notification_template_big_media 0x7f040021
+int layout notification_template_big_media_narrow 0x7f040022
+int layout notification_template_lines 0x7f040023
+int layout notification_template_media 0x7f040024
+int layout notification_template_part_chronometer 0x7f040025
+int layout notification_template_part_time 0x7f040026
+int layout select_dialog_item_material 0x7f040027
+int layout select_dialog_multichoice_material 0x7f040028
+int layout select_dialog_singlechoice_material 0x7f040029
+int layout support_simple_spinner_dropdown_item 0x7f04002a
+>>>>>>> origin/master
 int mipmap background 0x7f030000
 int mipmap cupcake 0x7f030001
 int mipmap donut 0x7f030002

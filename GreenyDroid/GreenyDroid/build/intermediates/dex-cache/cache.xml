@@ -19,7 +19,11 @@
         jar="C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
+<<<<<<< HEAD
         sha1="035169471edf72dba9aef9069edaa405b27f93ad">
+=======
+        sha1="2cbc76701eb689bbc3dd8c51a7dc86a25b6835db">
+>>>>>>> origin/master
         <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7127b141bac3442ac6424fe38ca1ec9b81984e70\classes.dex" />
     </item>
     <item

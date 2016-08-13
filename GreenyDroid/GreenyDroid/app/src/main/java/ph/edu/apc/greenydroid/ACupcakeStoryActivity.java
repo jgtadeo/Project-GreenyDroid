@@ -14,8 +14,13 @@ public class ACupcakeStoryActivity extends AppCompatActivity {
         Thread myThread = new Thread(){
             public void run(){
                 try{
+<<<<<<< HEAD
                     sleep(5000);
                     Intent i = new Intent(getApplicationContext(),IntroductionActivity.class);
+=======
+                    sleep(8000);
+                    Intent i = new Intent(getApplicationContext(),BCupcakeStoryActivity.class);
+>>>>>>> origin/master
                     startActivity(i);
                     finish();
                 }catch (InterruptedException e){

@@ -19,6 +19,14 @@
         <activity android:name=".AboutActivity"></activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".IntroductionActivity"></activity>
+<<<<<<< HEAD
+=======
+        <activity android:name=".ACupcakeStoryActivity"></activity>
+        <activity android:name=".BCupcakeStoryActivity"></activity>
+        <activity android:name=".CCupcakeStoryActivity"></activity>
+        <activity android:name=".Introduction2Activity"></activity>
+        <activity android:name=".ACupcakeQuestion"></activity>
+>>>>>>> origin/master
     </application>
 
 </manifest>
