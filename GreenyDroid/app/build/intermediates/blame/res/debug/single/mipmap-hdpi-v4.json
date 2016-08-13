@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\mipmap-hdpi\\donut.png"
     },
     {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\android.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\mipmap-hdpi\\android.png"
+    },
+    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\background.PNG",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\mipmap-hdpi\\background.PNG"
     },

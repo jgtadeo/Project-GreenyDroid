@@ -14,7 +14,7 @@ public class CCupcakeStoryActivity extends AppCompatActivity {
         Thread myThread = new Thread(){
             public void run(){
                 try{
-                    sleep(8000);
+                    sleep(5000);
                     Intent i = new Intent(getApplicationContext(), Introduction2Activity.class);
                     startActivity(i);
                     finish();

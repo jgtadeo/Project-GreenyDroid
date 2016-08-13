@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_introduction.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_introduction.xml"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -26,6 +26,10 @@
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_acupcakestory.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_acupcakestory.xml"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_introduction3.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_introduction3.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
@@ -42,10 +46,6 @@
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_cupcakeminigame.xml",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_cupcakeminigame.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
@@ -172,12 +172,12 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_setting.xml"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_about.xml"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_introduction2.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_introduction2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\layout\\activity_about.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ccupcakestory.xml",
