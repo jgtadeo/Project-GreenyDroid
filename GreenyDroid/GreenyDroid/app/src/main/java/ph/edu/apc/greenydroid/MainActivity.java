@@ -45,9 +45,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
     }
-    private void settingButton(){
-        Button setting = (Button)findViewById(R.id.btnSetting);
-        setting.setOnClickListener(new View.OnClickListener(){
+
+    private void settingButton() {
+        Button setting = (Button) findViewById(R.id.btnSetting);
+        setting.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, SettingActivity.class);
                 startActivity(i);
@@ -55,27 +56,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void aboutButton(){
-        Button about = (Button)findViewById(R.id.btnAbout);
-        about.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+
+    private void aboutButton() {
+        Button about = (Button) findViewById(R.id.btnAbout);
+        about.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(i);
                 finish();
             }
         });
     }
-    private void startButton(){
-        Button start = (Button)findViewById(R.id.btnStart);
-        start.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+
+    private void startButton() {
+        Button start = (Button) findViewById(R.id.btnStart);
+        start.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, StartActivity.class);
                 startActivity(i);
                 finish();
             }
         });
     }
-
-
 }
+
 
