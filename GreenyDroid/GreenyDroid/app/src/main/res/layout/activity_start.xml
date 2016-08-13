@@ -18,7 +18,9 @@
         android:id="@+id/btnContinue"
         android:layout_marginBottom="85dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        />
 
     <EditText
         android:layout_width="wrap_content"

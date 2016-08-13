@@ -24,6 +24,7 @@
         <activity android:name="ph.edu.apc.greenydroid.SettingActivity" />
         <activity android:name="ph.edu.apc.greenydroid.AboutActivity" />
         <activity android:name="ph.edu.apc.greenydroid.StartActivity" />
+        <activity android:name="ph.edu.apc.greenydroid.IntroductionActivity" />
     </application>
 
 </manifest>

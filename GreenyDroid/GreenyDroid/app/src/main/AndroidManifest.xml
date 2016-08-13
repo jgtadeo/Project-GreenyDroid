@@ -18,6 +18,7 @@
         <activity android:name=".SettingActivity"></activity>
         <activity android:name=".AboutActivity"></activity>
         <activity android:name=".StartActivity"></activity>
+        <activity android:name=".IntroductionActivity"></activity>
     </application>
 
 </manifest>
