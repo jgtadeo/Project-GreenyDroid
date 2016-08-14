@@ -32,8 +32,17 @@
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\src\\main\\res\\drawable\\background2.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lollipop.png",
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\src\\main\\res\\drawable\\lollipop.png"
+=======
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cupcaked.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\cupcaked.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+>>>>>>> origin/master
     },
     {
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gingerbread.png",
@@ -92,6 +101,7 @@
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\src\\main\\res\\drawable\\introductionbackground3.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cupcakec.png",
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\src\\main\\res\\drawable\\cupcakec.png"
     },
@@ -102,6 +112,18 @@
     {
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+=======
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\introductionbackground3.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\introductionbackground3.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.PNG",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\background.PNG"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hospital.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\hospital.png"
+>>>>>>> origin/master
     },
     {
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -120,8 +142,21 @@
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\src\\main\\res\\drawable\\eclair.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
+=======
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cupcakee.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\cupcakee.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cupcakef.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\src\\main\\res\\drawable\\cupcakef.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobprog\\GreenyDroid\\Project\\GreenyDroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
+>>>>>>> origin/master
     },
     {
         "merged": "C:\\Users\\johan\\Desktop\\Project-GreenyDroid\\GreenyDroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",

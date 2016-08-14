@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 /**
  * Created by Renzo on 13/08/2016.
  */
@@ -35,6 +37,21 @@ public class CupcakeResultActivity extends AppCompatActivity {
         }else if(c < 3){
             retryButton();
         }
+        if(DCupcakeQuestionActivity.B.isChecked()){
+            c+=1;
+        }else{
+
+        }
+        if(ECupcakeQuestionActivity.A.isChecked()){
+            c+=1;
+        }else{
+
+        }
+        if(FCupcakeQuestionActivity.A.isChecked()){
+            c+=1;
+        }else{
+
+        }
         if(StartActivity.name.isEmpty()){
             TextView Score = (TextView)findViewById(R.id.score);
             Score.setText("Your score is: " + c);
@@ -50,7 +67,21 @@ public class CupcakeResultActivity extends AppCompatActivity {
         retry.setVisibility(View.VISIBLE);
         retry.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(CupcakeResultActivity.this, ACupcakeQuestionActivity.class);
+                Random generator = new Random();
+                int number = generator.nextInt(2) + 1;
+
+                Class activity = null;
+
+                switch(number){
+                    case 1:
+                        activity = DCupcakeQuestionActivity.class;
+
+                        break;
+                    default:
+                        activity = ACupcakeQuestionActivity.class;
+                        break;
+                }
+                Intent i = new Intent(getBaseContext(), activity);
                 startActivity(i);
                 finish();
             }

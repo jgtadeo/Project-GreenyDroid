@@ -1,6 +1,7 @@
 package ph.edu.apc.greenydroid;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -34,8 +35,10 @@ public class StartActivity extends AppCompatActivity {
         cntinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
                 Intent i = new Intent(StartActivity.this, IntroductionActivity.class);
-                    startActivity(i);
-                    finish();
+                editName = (EditText) findViewById(R.id.editName);
+                name = editName.getText().toString();
+                startActivity(i);
+                finish();
                 }
         });
     }
