@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import java.util.concurrent.TimeUnit;
 import android.os.CountDownTimer;
+import android.widget.TextView;
 
 /**
  * Created by Renzo on 12/08/2016.
  */
 public class ACupcakeStoryActivity extends AppCompatActivity {
+    TextView timer;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acupcakestory);
