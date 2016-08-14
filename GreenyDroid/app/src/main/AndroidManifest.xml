@@ -26,6 +26,9 @@
         <activity android:name=".ACupcakeQuestionActivity"></activity>
         <activity android:name=".BCupCakeQuestionActivity"></activity>
         <activity android:name=".CCupcakeQuestionActivity"></activity>
+        <activity android:name=".DCupcakeQuestionActivity"></activity>
+        <activity android:name=".ECupcakeQuestionActivity"></activity>
+        <activity android:name=".FCupcakeQuestionActivity"></activity>
         <activity android:name=".CupcakeResultActivity"></activity>
         <activity android:name=".Introduction3Activity"></activity>
         <activity android:name=".CupcakeMiniGame"></activity>

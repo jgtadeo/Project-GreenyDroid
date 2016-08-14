@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         startButton();
 
         if (bgdChecked == 0) {
-            bgdMusic = MediaPlayer.create(this, R.raw.robotic);
+            bgdMusic = MediaPlayer.create(this, R.raw.tiptoe);
             bgdMusic.setLooping(true);
             bgdMusic.start();
         }

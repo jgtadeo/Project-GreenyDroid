@@ -19,7 +19,7 @@ public class SettingActivity extends AppCompatActivity {
     static CheckBox music;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         backButton();

@@ -32,6 +32,9 @@
         <activity android:name="ph.edu.apc.greenydroid.ACupcakeQuestionActivity" />
         <activity android:name="ph.edu.apc.greenydroid.BCupCakeQuestionActivity" />
         <activity android:name="ph.edu.apc.greenydroid.CCupcakeQuestionActivity" />
+        <activity android:name="ph.edu.apc.greenydroid.DCupcakeQuestionActivity" />
+        <activity android:name="ph.edu.apc.greenydroid.ECupcakeQuestionActivity" />
+        <activity android:name="ph.edu.apc.greenydroid.FCupcakeQuestionActivity" />
         <activity android:name="ph.edu.apc.greenydroid.CupcakeResultActivity" />
         <activity android:name="ph.edu.apc.greenydroid.Introduction3Activity" />
         <activity android:name="ph.edu.apc.greenydroid.CupcakeMiniGame" />

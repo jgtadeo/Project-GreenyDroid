@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GreenyDroid is a game application that allows the user to know more about every version of android and know more about health tips depending on the version of android. It has different levels from easiest (first version) to hardest (latest version). Every version, there is different character that they will be using in mini games. "
+        android:text="GreenyDroid is a game application that allows the user to know more about every version of android and know more about health tips depending on the version of android. It has different levels from easiest (first version) to hardest (latest version). Every version, there is different character that they will be using in mini games.  In order to go to the next level, the user needs to do the challenges correctly but if the user cannot do the challenges, they will repeat the challenge from the beginning of their current level."
         android:id="@+id/firstpar"
         android:gravity="center_vertical"
         android:layout_alignParentRight="true"
@@ -31,20 +31,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="57dp"
         android:layout_marginRight="50dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="In order to go to the next level, the user needs to do the challenges correctly but if the user cannot do the challenges, they will repeat the challenge from the beginning of their current level."
-        android:id="@+id/secondpar"
-        android:gravity="center_vertical"
-        android:layout_below="@+id/firstpar"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="57dp"
         />
 
 </RelativeLayout>

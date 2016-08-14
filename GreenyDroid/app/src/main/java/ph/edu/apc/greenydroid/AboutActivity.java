@@ -12,6 +12,7 @@ import android.widget.Button;
  */
 public class AboutActivity extends AppCompatActivity {
 
+    public static int bgdCheck = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class AboutActivity extends AppCompatActivity {
         Button back = (Button)findViewById(R.id.btnBack);
         back.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                bgdCheck =1;
                 Intent i = new Intent(AboutActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();

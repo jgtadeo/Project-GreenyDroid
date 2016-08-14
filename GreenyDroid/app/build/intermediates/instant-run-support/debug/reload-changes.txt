@@ -2,4 +2,3 @@ CHANGED,C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\
 CHANGED,C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
 CHANGED,C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\ph\edu\apc\greenydroid\CupcakeResultActivity$2$override.class
 CHANGED,C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\ph\edu\apc\greenydroid\CupcakeResultActivity$override.class
-CHANGED,C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\ph\edu\apc\greenydroid\CupcakeMiniGame$GreenyCanvas$override.class
