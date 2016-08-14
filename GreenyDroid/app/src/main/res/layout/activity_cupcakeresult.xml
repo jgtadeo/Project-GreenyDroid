@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:text="Next"
         android:id="@+id/btnNext"
-
         android:enabled="true"
         android:layout_alignTop="@+id/btnRetry"
         android:layout_alignParentLeft="true"

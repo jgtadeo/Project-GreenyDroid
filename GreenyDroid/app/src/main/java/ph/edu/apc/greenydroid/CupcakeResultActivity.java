@@ -30,22 +30,20 @@ public class CupcakeResultActivity extends AppCompatActivity {
         if(ACupcakeQuestionActivity.C.isChecked()){
             c+=1;
         }
-
         if(c == 3){
             nextButton();
         }else if(c < 3){
             retryButton();
         }
-
         if(StartActivity.name.isEmpty()){
             TextView Score = (TextView)findViewById(R.id.score);
             Score.setText("Your score is: " + c);
         }else{
             TextView Name = (TextView)findViewById(R.id.congratulation);
             Name.setText("Congratulation " + name);
+            TextView Score = (TextView)findViewById(R.id.score);
+            Score.setText("Your score is: " + c);
         }
-
-
     }
     private void retryButton(){
         Button retry = (Button)findViewById(R.id.btnRetry);
@@ -58,7 +56,6 @@ public class CupcakeResultActivity extends AppCompatActivity {
             }
         });
     }
-
     private void nextButton(){
         Button next = (Button)findViewById(R.id.btnNext);
         next.setVisibility(View.VISIBLE);
@@ -67,8 +64,7 @@ public class CupcakeResultActivity extends AppCompatActivity {
                 Intent i = new Intent(CupcakeResultActivity.this, CupcakeMiniGame.class);
                 startActivity(i);
                 finish();
-                }
-            });
+            }
+        });
     }
-
 }
