@@ -4,29 +4,25 @@
     api-level="19"
     density="hdpi"
     format="7"
-    timestamp="177928948234992"
-    token="-3227546772395055950" >
+    timestamp="1299727332518"
+    token="220562384096501456" >
 
     <task
         name="javac"
-        duration="3718" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="436" />
+        duration="0" />
     <task
         name="verifier"
-        duration="145" />
+        duration="0" />
 
-    <artifact
-        location="C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="177928948234992" >
+    <build timestamp="98257245928601" >
         <artifact
-            location="C:\Users\Renzo\Desktop\Subjects\Mobprog\GreenyDroid\Project\GreenyDroid\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\johan\Desktop\Project-GreenyDroid\GreenyDroid\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

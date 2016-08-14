@@ -3,6 +3,8 @@ package ph.edu.apc.greenydroid;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import java.util.concurrent.TimeUnit;
+import android.os.CountDownTimer;
 
 /**
  * Created by Renzo on 12/08/2016.
