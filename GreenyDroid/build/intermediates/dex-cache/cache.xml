@@ -26,7 +26,7 @@
         jar="C:\Users\johan\Desktop\Project-GreenyDroid\GreenyDroid\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="89446e00f7ca91bab1dc63a5d4d9d7ec2ece39c3">
+        sha1="ec131c5ee3beeaf71ebbbf1b3f7ae04a140f7a05">
         <dex dex="C:\Users\johan\Desktop\Project-GreenyDroid\GreenyDroid\app\build\intermediates\pre-dexed\debug\instant-run_ce0752a8c360f2822c039fcff1aa93083f24e3e8.jar" />
     </item>
     <item
@@ -47,7 +47,7 @@
         jar="C:\Users\johan\Desktop\Project-GreenyDroid\GreenyDroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="0454143f37446327fadf8ca6f7996dc5becddeca">
+        sha1="2346296f19e971c7991f06ee77efb0fbd9e64861">
         <dex dex="C:\Users\johan\Desktop\Project-GreenyDroid\GreenyDroid\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_0aa0497f3ab1c4889952540cb9e13498c2597208.jar" />
     </item>
     <item
