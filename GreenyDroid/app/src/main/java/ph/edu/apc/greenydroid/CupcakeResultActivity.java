@@ -21,8 +21,6 @@ public class CupcakeResultActivity extends AppCompatActivity {
         int c = 0;
         String name = StartActivity.name;
 
-        Toast.makeText(CupcakeResultActivity.this, "Score must be 3 to proceed.", Toast.LENGTH_LONG).show();
-
         if(CCupcakeQuestionActivity.D.isChecked()){
             c+=1;
         }
@@ -33,24 +31,11 @@ public class CupcakeResultActivity extends AppCompatActivity {
             c+=1;
         }
         if(c == 3){
+            Toast.makeText(CupcakeResultActivity.this, "Good job!", Toast.LENGTH_LONG).show();
             nextButton();
         }else if(c < 3){
+            Toast.makeText(CupcakeResultActivity.this, "Score must be 3 to proceed.", Toast.LENGTH_LONG).show();
             retryButton();
-        }
-        if(DCupcakeQuestionActivity.B.isChecked()){
-            c+=1;
-        }else{
-
-        }
-        if(ECupcakeQuestionActivity.A.isChecked()){
-            c+=1;
-        }else{
-
-        }
-        if(FCupcakeQuestionActivity.A.isChecked()){
-            c+=1;
-        }else{
-
         }
         if(StartActivity.name.isEmpty()){
             TextView Score = (TextView)findViewById(R.id.score);
@@ -67,21 +52,7 @@ public class CupcakeResultActivity extends AppCompatActivity {
         retry.setVisibility(View.VISIBLE);
         retry.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Random generator = new Random();
-                int number = generator.nextInt(2) + 1;
-
-                Class activity = null;
-
-                switch(number){
-                    case 1:
-                        activity = DCupcakeQuestionActivity.class;
-
-                        break;
-                    default:
-                        activity = ACupcakeQuestionActivity.class;
-                        break;
-                }
-                Intent i = new Intent(getBaseContext(), activity);
+                Intent i = new Intent(CupcakeResultActivity.this, ACupcakeQuestionActivity.class);
                 startActivity(i);
                 finish();
             }
