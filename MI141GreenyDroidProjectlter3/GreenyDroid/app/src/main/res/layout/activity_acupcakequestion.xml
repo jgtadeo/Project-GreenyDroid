@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cupcakea"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/radioA"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Greenyproid"
+            android:id="@+id/radioButtonA"
+            android:checked="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b.  Greenydrois"
+            android:id="@+id/radioButtonB"
+            android:layout_marginTop="10dp"
+            android:layout_alignTop="@+id/radioButtonA"
+            android:layout_alignLeft="@+id/radioButtonA"
+            android:layout_alignStart="@+id/radioButtonA"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. GreenyDroid"
+            android:id="@+id/radioButtonC"
+            android:checked="false"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/radioButtonB"
+            android:layout_alignTop="@+id/radioButtonB"
+            android:layout_alignLeft="@+id/radioButtonB"
+            android:layout_alignStart="@+id/radioButtonB" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. Greenydroyd"
+            android:id="@+id/radioButtonD"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/radioButtonC"
+            android:layout_alignTop="@+id/radioButtonC"
+            android:layout_alignLeft="@+id/radioButtonC"
+            android:layout_alignStart="@+id/radioButtonC"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnNext"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
