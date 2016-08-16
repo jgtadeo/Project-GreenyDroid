@@ -30,20 +30,63 @@ public class CupcakeResultActivity extends AppCompatActivity {
         if(ACupcakeQuestionActivity.C.isChecked()){
             c+=1;
         }
-        if(c == 3){
-            Toast.makeText(CupcakeResultActivity.this, "Good job!", Toast.LENGTH_LONG).show();
-            nextButton();
-        }else if(c < 3){
-            Toast.makeText(CupcakeResultActivity.this, "Score must be 3 to proceed.", Toast.LENGTH_LONG).show();
-            retryButton();
-        }
-        if(StartActivity.name.isEmpty()){
+        switch(c){
+            case 0:
+                if(StartActivity.name.isEmpty()){
 
-        }else{
-            TextView Name = (TextView)findViewById(R.id.congratulation);
-            Name.setText("Congratulation " + name);
-            TextView Score = (TextView)findViewById(R.id.score);
-            Score.setText("Your score is: " + c);
+                }else{
+                    TextView Name = (TextView)findViewById(R.id.congratulation);
+                    Name.setText("Please Try again " + name);
+                    TextView Score = (TextView)findViewById(R.id.score);
+                    Score.setText("Your score is: " + c);
+                }
+                retryButton();
+                break;
+            case 1:
+                if(StartActivity.name.isEmpty()){
+
+                }else{
+                    TextView Name = (TextView)findViewById(R.id.congratulation);
+                    Name.setText("Try again " + name);
+                    TextView Score = (TextView)findViewById(R.id.score);
+                    Score.setText("Your score is: " + c);
+                }
+                retryButton();
+                break;
+            case 2:
+                if(StartActivity.name.isEmpty()){
+
+                }else{
+                    TextView Name = (TextView)findViewById(R.id.congratulation);
+                    Name.setText("Almost there " + name);
+                    TextView Score = (TextView)findViewById(R.id.score);
+                    Score.setText("Your score is: " + c);
+                }
+                retryButton();
+                break;
+            case 3:
+                if(StartActivity.name.isEmpty()){
+
+                }else{
+                    TextView Name = (TextView)findViewById(R.id.congratulation);
+                    Name.setText("Congratulations " + name);
+                    TextView Score = (TextView)findViewById(R.id.score);
+                    Score.setText("Your score is: " + c);
+                }
+                nextButton();
+                break;
+            default:
+                if(StartActivity.name.isEmpty()){
+
+                }else{
+                    TextView Name = (TextView)findViewById(R.id.congratulation);
+                    Name.setText("Try again " + name);
+                    TextView Score = (TextView)findViewById(R.id.score);
+                    Score.setText("Your score is: " + c);
+                }
+                retryButton();
+                break;
+
         }
     }
     private void retryButton(){
