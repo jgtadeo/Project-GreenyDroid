@@ -31,25 +31,14 @@ public class CupcakeResultActivity extends AppCompatActivity {
             c+=1;
         }
         switch(c){
-            case 0:
-                if(StartActivity.name.isEmpty()){
-
-                }else{
-                    TextView Name = (TextView)findViewById(R.id.congratulation);
-                    Name.setText("Please Try again " + name);
-                    TextView Score = (TextView)findViewById(R.id.score);
-                    Score.setText("Your score is: " + c);
-                }
-                retryButton();
-                break;
             case 1:
                 if(StartActivity.name.isEmpty()){
 
                 }else{
                     TextView Name = (TextView)findViewById(R.id.congratulation);
-                    Name.setText("Try again " + name);
+                    Name.setText("Try again "  + name);
                     TextView Score = (TextView)findViewById(R.id.score);
-                    Score.setText("Your score is: " + c);
+                    Score.setText("" + c);
                 }
                 retryButton();
                 break;
@@ -58,9 +47,9 @@ public class CupcakeResultActivity extends AppCompatActivity {
 
                 }else{
                     TextView Name = (TextView)findViewById(R.id.congratulation);
-                    Name.setText("Almost there " + name);
+                    Name.setText("Almost there "  + name);
                     TextView Score = (TextView)findViewById(R.id.score);
-                    Score.setText("Your score is: " + c);
+                    Score.setText("" + c);
                 }
                 retryButton();
                 break;
@@ -69,9 +58,9 @@ public class CupcakeResultActivity extends AppCompatActivity {
 
                 }else{
                     TextView Name = (TextView)findViewById(R.id.congratulation);
-                    Name.setText("Congratulations " + name);
+                    Name.setText("Congratulation " + name);
                     TextView Score = (TextView)findViewById(R.id.score);
-                    Score.setText("Your score is: " + c);
+                    Score.setText("" + c);
                 }
                 nextButton();
                 break;
@@ -80,9 +69,9 @@ public class CupcakeResultActivity extends AppCompatActivity {
 
                 }else{
                     TextView Name = (TextView)findViewById(R.id.congratulation);
-                    Name.setText("Try again " + name);
+                    Name.setText("Please try again " + name);
                     TextView Score = (TextView)findViewById(R.id.score);
-                    Score.setText("Your score is: " + c);
+                    Score.setText("" + c);
                 }
                 retryButton();
                 break;
@@ -105,7 +94,7 @@ public class CupcakeResultActivity extends AppCompatActivity {
         next.setVisibility(View.VISIBLE);
         next.setOnClickListener(new View.OnClickListener(){
             public void onClick (View v){
-                Intent i = new Intent(CupcakeResultActivity.this, CupcakeMiniGame.class);
+                Intent i = new Intent(CupcakeResultActivity.this, Introduction3Activity.class);
                 startActivity(i);
                 finish();
             }

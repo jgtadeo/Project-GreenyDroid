@@ -22,14 +22,14 @@ public class CupcakeMiniGame extends AppCompatActivity {
     GreenyCanvas cv;
 
     Rect greenySrc, greenyDst;
-    int greenyLeft, greenyTop, greenyRight, greenyBottom;
-    int greenyML = 175, greenyMR = 305;
+    int greenyLeft = 175, greenyTop = 500, greenyRight = 305, greenyBottom = 630;
+   // int greenyML = 175, greenyMR = 305;
     Rect cupcakeSrc, cupcakeDst;
     int cupcakeLeft = 190, cupcakeTop = 250, cupcakeRight = 300, cupcakeBottom = 450;
     Rect bananaSrc, bananaDst;
     int bananaTop = -155, bananaBottom = -5;
     Rect pearsSrc, pearsDst;
-    int pearsLeft, pearsTop = -155, pearsRight, pearsBottom = -5;
+    int pearsLeft, pearsTop = -105, pearsRight, pearsBottom = -5;
     Rect watermelonSrc, watermelonDst;
 
     Thread down;
@@ -43,14 +43,14 @@ public class CupcakeMiniGame extends AppCompatActivity {
         GreenyCanvas(Context c){
 
             super(c);
-            greeny = BitmapFactory.decodeResource(getResources(),R.mipmap.android);
-            cupcake = BitmapFactory.decodeResource(getResources(),R.mipmap.cupcake);
-            // banana = BitmapFactory.decodeResource(getResources(),R.mipmap.banana);
 
+            greeny = BitmapFactory.decodeResource(getResources(),R.mipmap.android);
             greenySrc = new Rect(0, 0, 330, 240);
-            greenyDst = new Rect(greenyML, 500, greenyMR, 630);
+            greenyDst = new Rect(greenyLeft, greenyTop, greenyRight, greenyBottom);
+            cupcake = BitmapFactory.decodeResource(getResources(),R.mipmap.cupcake);
             cupcakeSrc = new Rect(130, 140, 465, 555);
             cupcakeDst = new Rect(cupcakeLeft, cupcakeTop, cupcakeRight, cupcakeBottom);
+            // banana = BitmapFactory.decodeResource(getResources(),R.mipmap.banana);
             // bananaSrc = new Rect(0, 0, 1950, 1670);
             // bananaDst = new Rect(50, bananaTop, 150, bananaBottom);
             pears = BitmapFactory.decodeResource(getResources(),R.mipmap.pears);
@@ -65,24 +65,24 @@ public class CupcakeMiniGame extends AppCompatActivity {
         public boolean onTouchEvent(MotionEvent event) {
             mx = (int) event.getX();
             if(mx <= 240){
-                if(greenyML > 0) {
-                    greenyML -= 100;
-                    greenyMR -= 100;
+                if(greenyLeft > 0) {
+                    greenyLeft -= 100;
+                    greenyRight -= 100;
                 }else{
-                    greenyML -= 0;
-                    greenyMR -= 0;
+                    greenyLeft -= 0;
+                    greenyRight -= 0;
                 }
             }else{
-                if(greenyMR < 470) {
-                    greenyML += 100;
-                    greenyMR += 100;
+                if(greenyRight < 470) {
+                    greenyLeft += 100;
+                    greenyRight += 100;
                 }else{
-                    greenyML += 0;
-                    greenyMR += 0;
+                    greenyLeft += 0;
+                    greenyRight += 0;
                 }
             }
-            greenyDst.left = greenyML;
-            greenyDst.right = greenyMR;
+            greenyDst.left = greenyLeft;
+            greenyDst.right = greenyRight;
             return super.onTouchEvent(event);
         }
 
