@@ -20,7 +20,7 @@ public class Introduction3Activity extends AppCompatActivity {
         begin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Introduction3Activity.this, CupcakeMiniGame.class);
+                Intent i = new Intent(Introduction3Activity.this, InstructionActivity.class);
                 startActivity(i);
                 finish();
             }

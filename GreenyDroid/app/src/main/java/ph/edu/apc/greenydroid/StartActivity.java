@@ -26,35 +26,23 @@ public class StartActivity extends AppCompatActivity {
         editName = (EditText) findViewById(R.id.editName);
         name = editName.getText().toString();
 
-
         Toast.makeText(StartActivity.this, "WARNING! without name, score will not be displayed.", Toast.LENGTH_LONG).show();
 
+        continueButton();
+    }
 
-
-        final Button cntinue = (Button)findViewById(R.id.btnContinue);
+    public void continueButton() {
+        Button cntinue = (Button) findViewById(R.id.btnContinue);
         cntinue.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
+            public void onClick(View v) {
                 Intent i = new Intent(StartActivity.this, IntroductionActivity.class);
                 editName = (EditText) findViewById(R.id.editName);
                 name = editName.getText().toString();
                 startActivity(i);
                 finish();
-                }
+            }
         });
     }
-   /* public void continueButton() {
-        Button cntinue = (Button) findViewById(R.id.btnContinue);
-        cntinue.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                    Intent i = new Intent(StartActivity.this, IntroductionActivity.class);
-                    startActivity(i);
-                    finish();
-                    SharedPreferences sp = getSharedPreferences("Name.txt", MODE_PRIVATE);
-                    SharedPreferences.Editor spsave = sp.edit();
-                    spsave.commit();
-            }
-        });*/
-    }
+}
 
 

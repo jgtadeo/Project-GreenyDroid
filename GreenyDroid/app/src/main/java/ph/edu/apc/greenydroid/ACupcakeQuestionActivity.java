@@ -3,6 +3,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -17,9 +18,17 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
 
     static RadioButton A, B, C ,D;
 
+    int t = 0;
+
+    Thread tim;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acupcakequestion);
+
+        Runnable ti = new timer();
+        tim = new Thread(ti);
+        tim.start();
 
         A = (RadioButton)findViewById(R.id.radioButtonA);
         A.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -78,6 +87,21 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    class timer implements Runnable{
+        @Override
+        public void run() {
+            while(t != 10){
+                SystemClock.sleep(1000);
+                t++;
+            }
+            if(t == 10){
+                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupCakeQuestionActivity.class);
+                startActivity(i);
+                finish();
+            }
+        }
     }
 
 }

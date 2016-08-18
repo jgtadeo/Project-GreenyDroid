@@ -1,9 +1,12 @@
 package ph.edu.apc.greenydroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -23,18 +26,21 @@ public class CupcakeMiniGame extends AppCompatActivity {
 
     Rect greenySrc, greenyDst;
     int greenyLeft = 175, greenyTop = 500, greenyRight = 305, greenyBottom = 630;
-   // int greenyML = 175, greenyMR = 305;
     Rect cupcakeSrc, cupcakeDst;
-    int cupcakeLeft = 190, cupcakeTop = 250, cupcakeRight = 300, cupcakeBottom = 450;
+    int cupcakeLeft, cupcakeTop = -105, cupcakeRight, cupcakeBottom = -5;
     Rect bananaSrc, bananaDst;
     int bananaTop = -155, bananaBottom = -5;
     Rect pearsSrc, pearsDst;
-    int pearsLeft, pearsTop = -105, pearsRight, pearsBottom = -5;
+    int pearsLeft = 100, pearsTop = -105, pearsRight = 200, pearsBottom = -20;
     Rect watermelonSrc, watermelonDst;
 
-    Thread down;
+    int count, score;
 
-    Random p;
+    Thread down, time;
+
+    Random p, c;
+
+    Paint blck;
 
     class GreenyCanvas extends View {
 
@@ -43,6 +49,10 @@ public class CupcakeMiniGame extends AppCompatActivity {
         GreenyCanvas(Context c){
 
             super(c);
+
+            blck = new Paint();
+            blck.setColor(Color.BLACK);
+            blck.setTextSize(30);
 
             greeny = BitmapFactory.decodeResource(getResources(),R.mipmap.android);
             greenySrc = new Rect(0, 0, 330, 240);
@@ -92,56 +102,85 @@ public class CupcakeMiniGame extends AppCompatActivity {
             canvas.drawBitmap(cupcake, cupcakeSrc, cupcakeDst, null);
             // canvas.drawBitmap(banana, bananaSrc, bananaDst, null);
             canvas.drawBitmap(pears, pearsSrc, pearsDst, null);
-            //canvas.drawBitmap(watermelon, watermelonSrc, watermelonDst, null);
+            //canvas.drawBitmap(watermelon, watermelonSrc, watermelonDst, null);.
+            canvas.drawText("Score: " + score, 320, 50, blck);
             invalidate();
+        }
+    }
+
+    class Timer implements Runnable{
+        @Override
+        public void run() {
+            while(count != 5){
+                SystemClock.sleep(1000);
+                count++;
+            }
         }
     }
 
     class  AnimateDown implements Runnable{
         public void run(){
             while(true){
-                if(pearsBottom >= 900){
-                    p = new Random();
-                    pearsLeft = p.nextInt(350);
-                    pearsRight = pearsLeft + 130;
-                    pearsTop = -155;
-                    pearsBottom = -5;
-                }
-                if(greenyTop <= pearsBottom && greenyTop >= pearsTop || greenyBottom <= pearsBottom && greenyBottom >= pearsTop){
-                    if(greenyLeft <= pearsLeft && greenyLeft >= pearsRight || greenyRight <= pearsLeft && greenyRight >= pearsRight){
-                        p = new Random();
-                        pearsLeft = p.nextInt(350);
-                        pearsRight = pearsLeft + 130;
-                        pearsTop = -155;
-                        pearsBottom = -5;
-                    }
-                }
+
                 pearsTop += 100;
                 pearsBottom += 100;
+                cupcakeTop += 150;
+                cupcakeBottom += 150;
+
+                if(pearsBottom >= 1000){
+                    p = new Random();
+                    pearsLeft = p.nextInt(350);
+                    pearsRight = pearsLeft + 100;
+                    pearsTop = -155;
+                    pearsBottom = -20;
+                }
+                if(count == 5) {
+                    if (cupcakeBottom >= 2000) {
+                        c = new Random();
+                        cupcakeLeft = c.nextInt(350);
+                        cupcakeRight = cupcakeLeft + 130;
+                        cupcakeTop = -155;
+                        cupcakeBottom = -5;
+                    }
+                }
+
+                if(greenyLeft >= pearsLeft && greenyLeft <= pearsRight || greenyRight >= pearsLeft && greenyRight <= pearsRight){
+                    if(greenyTop >= pearsTop && greenyTop <= pearsBottom || greenyBottom >= pearsTop && greenyBottom <= pearsBottom){
+                        p = new Random();
+                        pearsLeft = p.nextInt(350);
+                        pearsRight = pearsLeft + 100;
+                        pearsTop = -155;
+                        pearsBottom = -20;
+                        score += 20;
+                    }
+                }
+                if(greenyLeft >= cupcakeLeft && greenyLeft <= cupcakeRight || greenyRight >= cupcakeLeft && greenyRight <= cupcakeRight){
+                    if(greenyTop >= cupcakeTop && greenyTop <= cupcakeBottom || greenyBottom >= cupcakeTop && greenyBottom <= cupcakeBottom){
+                        Intent i = new Intent(CupcakeMiniGame.this, MiniGameOver.class);
+                        startActivity(i);
+                        finish();
+                        break;
+                    }
+                }
+                if(score == 500){
+                    Intent i = new Intent(CupcakeMiniGame.this, MiniGameContinueActivity.class);
+                    startActivity(i);
+                    finish();
+                    break;
+                }
                 pearsDst.top = pearsTop;
                 pearsDst.bottom = pearsBottom;
                 pearsDst.left = pearsLeft;
                 pearsDst.right = pearsRight;
-                SystemClock.sleep(1000);
+                cupcakeDst.top = cupcakeTop;
+                cupcakeDst.bottom = cupcakeBottom;
+                cupcakeDst.left = cupcakeLeft;
+                cupcakeDst.right = cupcakeRight;
+                SystemClock.sleep(500);
             }
         }
     }
-    /* Thread wave;
-     class waving implements Runnable{
-         public void run(){
-                 while(true){
-                     greenyLeft+=329;
-                     greenyRight+=329;
-                     if(greenyLeft > 329 * 3){
-                         greenyLeft=60;
-                         greenyRight=330;
-                     }
-                     greenySrc.left = greenyLeft;
-                     greenySrc.right = greenyRight;
-                 SystemClock.sleep(100);
-             }
-         }
-     }*/
+
     protected void onCreate(Bundle savedInstanceCreate){
         super.onCreate(savedInstanceCreate);
         cv = new GreenyCanvas(this);
@@ -151,8 +190,8 @@ public class CupcakeMiniGame extends AppCompatActivity {
         down = new Thread(d);
         down.start();
 
-       /* Runnable hand = new waving();
-        wave = new Thread(hand);
-        wave.start();*/
+        Runnable t = new Timer();
+        time = new Thread(t);
+        time.start();
     }
 }
