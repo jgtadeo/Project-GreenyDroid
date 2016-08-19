@@ -29,7 +29,10 @@
         <activity android:name=".CCupcakeQuestionActivity"></activity>
         <activity android:name=".CupcakeResultActivity"></activity>
         <activity android:name=".Introduction3Activity"></activity>
+        <activity android:name=".InstructionActivity"></activity>
         <activity android:name=".CupcakeMiniGame"></activity>
+        <activity android:name=".MiniGameContinueActivity"></activity>
+        <activity android:name=".MiniGameOver"></activity>
     </application>
 
 </manifest>

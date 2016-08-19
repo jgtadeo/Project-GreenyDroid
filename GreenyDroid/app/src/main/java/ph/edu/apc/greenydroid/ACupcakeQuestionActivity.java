@@ -26,9 +26,9 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acupcakequestion);
 
-        Runnable ti = new timer();
-        tim = new Thread(ti);
-        tim.start();
+//        Runnable ti = new timer();
+  //      tim = new Thread(ti);
+    //    tim.start();
 
         A = (RadioButton)findViewById(R.id.radioButtonA);
         A.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -88,7 +88,7 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
             }
         });
     }
-
+/*
     class timer implements Runnable{
         @Override
         public void run() {
@@ -102,6 +102,5 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
                 finish();
             }
         }
-    }
-
+    }*/
 }
