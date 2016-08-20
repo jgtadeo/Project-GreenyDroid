@@ -30,7 +30,6 @@ public class StartActivity extends AppCompatActivity {
 
         continueButton();
     }
-
     public void continueButton() {
         Button cntinue = (Button) findViewById(R.id.btnContinue);
         cntinue.setOnClickListener(new View.OnClickListener() {

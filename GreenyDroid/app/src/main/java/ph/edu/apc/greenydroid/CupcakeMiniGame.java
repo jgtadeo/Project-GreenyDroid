@@ -27,12 +27,13 @@ public class CupcakeMiniGame extends AppCompatActivity {
     Rect greenySrc, greenyDst;
     int greenyLeft = 175, greenyTop = 500, greenyRight = 305, greenyBottom = 630;
     Rect cupcakeSrc, cupcakeDst;
-    int cupcakeLeft, cupcakeTop = -105, cupcakeRight, cupcakeBottom = -5;
+    int cupcakeLeft, cupcakeTop = -125, cupcakeRight, cupcakeBottom = -5;
     Rect bananaSrc, bananaDst;
     int bananaTop = -155, bananaBottom = -5;
     Rect pearsSrc, pearsDst;
     int pearsLeft = 100, pearsTop = -105, pearsRight = 200, pearsBottom = -20;
     Rect watermelonSrc, watermelonDst;
+    int waterLeft = 150, waterTop = -190, waterRight = 250, waterBottom = -105;
 
     int count, score;
 
@@ -66,9 +67,9 @@ public class CupcakeMiniGame extends AppCompatActivity {
             pears = BitmapFactory.decodeResource(getResources(),R.mipmap.pears);
             pearsSrc = new Rect(0, 0, 130, 190);
             pearsDst = new Rect(pearsLeft, pearsTop, pearsRight, pearsBottom);
-            // watermelon = BitmapFactory.decodeResource(getResources(),R.mipmap.watermelon);
-            // watermelonSrc = new Rect(0, 0, 150, 200);
-            // watermelonDst = new Rect(170, 100, 270, 200);
+            watermelon = BitmapFactory.decodeResource(getResources(),R.mipmap.watermelon);
+            watermelonSrc = new Rect(0, 0, 150, 200);
+            watermelonDst = new Rect(waterLeft, waterTop, waterRight, waterBottom);
         }
 
         int mx;
@@ -102,7 +103,7 @@ public class CupcakeMiniGame extends AppCompatActivity {
             canvas.drawBitmap(cupcake, cupcakeSrc, cupcakeDst, null);
             // canvas.drawBitmap(banana, bananaSrc, bananaDst, null);
             canvas.drawBitmap(pears, pearsSrc, pearsDst, null);
-            //canvas.drawBitmap(watermelon, watermelonSrc, watermelonDst, null);.
+            canvas.drawBitmap(watermelon, watermelonSrc, watermelonDst, null);
             canvas.drawText("Score: " + score, 320, 50, blck);
             invalidate();
         }
@@ -124,6 +125,8 @@ public class CupcakeMiniGame extends AppCompatActivity {
 
                 pearsTop += 100;
                 pearsBottom += 100;
+                waterTop += 100;
+                waterBottom += 100;
                 cupcakeTop += 150;
                 cupcakeBottom += 150;
 
@@ -131,15 +134,22 @@ public class CupcakeMiniGame extends AppCompatActivity {
                     p = new Random();
                     pearsLeft = p.nextInt(350);
                     pearsRight = pearsLeft + 100;
-                    pearsTop = -155;
+                    pearsTop = -105;
                     pearsBottom = -20;
+                }
+                if(waterBottom >= 1000){
+                    p = new Random();
+                    waterLeft = p.nextInt(350);
+                    waterRight = waterLeft + 100;
+                    waterTop = -190;
+                    waterBottom = -105;
                 }
                 if(count == 5) {
                     if (cupcakeBottom >= 2000) {
                         c = new Random();
                         cupcakeLeft = c.nextInt(350);
                         cupcakeRight = cupcakeLeft + 130;
-                        cupcakeTop = -155;
+                        cupcakeTop = -125;
                         cupcakeBottom = -5;
                     }
                 }
@@ -149,9 +159,19 @@ public class CupcakeMiniGame extends AppCompatActivity {
                         p = new Random();
                         pearsLeft = p.nextInt(350);
                         pearsRight = pearsLeft + 100;
-                        pearsTop = -155;
-                        pearsBottom = -20;
+                        pearsTop = -105;
+                        pearsBottom = -5;
                         score += 20;
+                    }
+                }
+                if(greenyLeft >= waterLeft && greenyLeft <= waterRight || greenyRight >= waterLeft && greenyRight <= waterRight){
+                    if(greenyTop >= waterTop && greenyTop <= waterBottom || greenyBottom >= waterTop && greenyBottom <= waterBottom){
+                        p = new Random();
+                        waterLeft = p.nextInt(350);
+                        waterRight = waterLeft + 100;
+                        waterTop = -190;
+                        waterBottom = -105;
+                        score += 40;
                     }
                 }
                 if(greenyLeft >= cupcakeLeft && greenyLeft <= cupcakeRight || greenyRight >= cupcakeLeft && greenyRight <= cupcakeRight){
@@ -172,6 +192,10 @@ public class CupcakeMiniGame extends AppCompatActivity {
                 pearsDst.bottom = pearsBottom;
                 pearsDst.left = pearsLeft;
                 pearsDst.right = pearsRight;
+                watermelonDst.top = waterTop;
+                watermelonDst.bottom = waterBottom;
+                watermelonDst.left = waterLeft;
+                watermelonDst.right = waterRight;
                 cupcakeDst.top = cupcakeTop;
                 cupcakeDst.bottom = cupcakeBottom;
                 cupcakeDst.left = cupcakeLeft;

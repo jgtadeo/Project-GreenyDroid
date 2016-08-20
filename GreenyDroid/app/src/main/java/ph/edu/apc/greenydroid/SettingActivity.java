@@ -34,35 +34,14 @@ public class SettingActivity extends AppCompatActivity {
         music.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    //SharedPreferences.Editor editor = getSharedPreferences("GreenyDroid.txt", MODE_PRIVATE).edit();
-                    //editor.putBoolean("Resume", true);
-                    //editor.commit();
                     music.setChecked(true);
                     MainActivity.bgdMusic.start();
                 } else {
-                    //SharedPreferences.Editor editor = getSharedPreferences("GreenyDroid.txt", MODE_PRIVATE).edit();
-                    //editor.putBoolean("Pause", false);
-                    //editor.commit();
                     music.setChecked(false);
                     MainActivity.bgdMusic.pause();
                 }
             }
         });
-
-        /*Button back = (Button)findViewById(R.id.btnBack);
-        back.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent(SettingActivity.this, MainActivity.class);
-                bgdCheck = 0;
-                startActivity(i);
-                finish();
-                SharedPreferences sp = getSharedPreferences("notepad.txt",MODE_PRIVATE);
-                SharedPreferences.Editor spsave = sp.edit();
-                spsave.apply();
-                spsave.commit();
-
-            }
-        });*/
     }
     public void backButton() {
         Button back = (Button) findViewById(R.id.btnBack);
@@ -72,9 +51,6 @@ public class SettingActivity extends AppCompatActivity {
                 Intent i = new Intent(SettingActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
-                SharedPreferences sp = getSharedPreferences("GreenyDroid.txt", MODE_PRIVATE);
-                SharedPreferences.Editor spsave = sp.edit();
-                spsave.commit();
             }
         });
     }

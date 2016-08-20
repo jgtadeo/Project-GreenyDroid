@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     static MediaPlayer bgdMusic;
     private int bgdChecked = SettingActivity.bgdCheck;
+    private int bgdChecked1 = AboutActivity.bgdCheck1;
+    private int bgdChecked2 = MiniGameOver.bgdCheck2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +24,13 @@ public class MainActivity extends AppCompatActivity {
         startButton();
 
         if (bgdChecked == 0) {
-            bgdMusic = MediaPlayer.create(this, R.raw.tiptoe);
-            bgdMusic.setLooping(true);
-            bgdMusic.start();
+            if(bgdChecked1 == 0) {
+                if(bgdChecked2 == 0) {
+                    bgdMusic = MediaPlayer.create(this, R.raw.tiptoe);
+                    bgdMusic.setLooping(true);
+                    bgdMusic.start();
+                }
+            }
         }
 
 
