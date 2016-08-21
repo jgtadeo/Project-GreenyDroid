@@ -2,6 +2,7 @@ package ph.edu.apc.greenydroid;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -26,6 +27,7 @@ public class CupcakeMiniGame extends AppCompatActivity {
 
     Rect greenySrc, greenyDst;
     int greenyLeft = 175, greenyTop = 500, greenyRight = 305, greenyBottom = 630;
+    int greenyLeftSrc = 0, greenyTopSrc = 0, greenyRightSrc = 330, greenyBottomSrc = 240;
     Rect cupcakeSrc, cupcakeDst;
     int cupcakeLeft, cupcakeTop = -125, cupcakeRight, cupcakeBottom = -5;
     Rect bananaSrc, bananaDst;
@@ -43,6 +45,8 @@ public class CupcakeMiniGame extends AppCompatActivity {
 
     Paint blck;
 
+    int highScore = 0, lastHighScore;
+
     class GreenyCanvas extends View {
 
         Bitmap greeny, cupcake, banana, pears, watermelon;
@@ -56,7 +60,7 @@ public class CupcakeMiniGame extends AppCompatActivity {
             blck.setTextSize(30);
 
             greeny = BitmapFactory.decodeResource(getResources(),R.mipmap.android);
-            greenySrc = new Rect(0, 0, 330, 240);
+            greenySrc = new Rect(greenyLeftSrc , greenyTopSrc, greenyRightSrc, greenyBottomSrc);
             greenyDst = new Rect(greenyLeft, greenyTop, greenyRight, greenyBottom);
             cupcake = BitmapFactory.decodeResource(getResources(),R.mipmap.cupcake);
             cupcakeSrc = new Rect(130, 140, 465, 555);
@@ -79,21 +83,41 @@ public class CupcakeMiniGame extends AppCompatActivity {
                 if(greenyLeft > 0) {
                     greenyLeft -= 100;
                     greenyRight -= 100;
+                    greenyLeftSrc = 2965;
+                    greenyTopSrc = 240;
+                    greenyRightSrc = 3280;
+                    greenyBottomSrc = 520;
                 }else{
                     greenyLeft -= 0;
                     greenyRight -= 0;
+                    greenyLeftSrc = 0;
+                    greenyTopSrc = 0;
+                    greenyRightSrc = 330;
+                    greenyBottomSrc = 240;
                 }
             }else{
                 if(greenyRight < 470) {
                     greenyLeft += 100;
                     greenyRight += 100;
+                    greenyLeftSrc = 2965;
+                    greenyTopSrc = 0;
+                    greenyRightSrc = 3280;
+                    greenyBottomSrc = 240;
                 }else{
                     greenyLeft += 0;
                     greenyRight += 0;
+                    greenyLeftSrc = 0;
+                    greenyTopSrc = 0;
+                    greenyRightSrc = 330;
+                    greenyBottomSrc = 240;
                 }
             }
             greenyDst.left = greenyLeft;
             greenyDst.right = greenyRight;
+            greenySrc.top = greenyTopSrc;
+            greenySrc.bottom = greenyBottomSrc;
+            greenySrc.left = greenyLeftSrc;
+            greenySrc.right = greenyRightSrc;
             return super.onTouchEvent(event);
         }
 
@@ -105,6 +129,7 @@ public class CupcakeMiniGame extends AppCompatActivity {
             canvas.drawBitmap(pears, pearsSrc, pearsDst, null);
             canvas.drawBitmap(watermelon, watermelonSrc, watermelonDst, null);
             canvas.drawText("Score: " + score, 320, 50, blck);
+            canvas.drawText("High Score: " + highScore, 20, 50, blck);
             invalidate();
         }
     }
@@ -162,6 +187,13 @@ public class CupcakeMiniGame extends AppCompatActivity {
                         pearsTop = -105;
                         pearsBottom = -5;
                         score += 20;
+                        if(score >= highScore){
+                            highScore = score;
+                            SharedPreferences sp = getSharedPreferences("highscore.txt", MODE_PRIVATE);
+                            SharedPreferences.Editor spsave = sp.edit();
+                            spsave.putInt("highscorebeat",highScore);
+                            spsave.commit();
+                        }
                     }
                 }
                 if(greenyLeft >= waterLeft && greenyLeft <= waterRight || greenyRight >= waterLeft && greenyRight <= waterRight){
@@ -172,6 +204,13 @@ public class CupcakeMiniGame extends AppCompatActivity {
                         waterTop = -190;
                         waterBottom = -105;
                         score += 40;
+                        if(score >= highScore){
+                            highScore = score;
+                            SharedPreferences sp = getSharedPreferences("highscore.txt", MODE_PRIVATE);
+                            SharedPreferences.Editor spsave = sp.edit();
+                            spsave.putInt("highscorebeat",highScore);
+                            spsave.commit();
+                        }
                     }
                 }
                 if(greenyLeft >= cupcakeLeft && greenyLeft <= cupcakeRight || greenyRight >= cupcakeLeft && greenyRight <= cupcakeRight){
@@ -217,5 +256,9 @@ public class CupcakeMiniGame extends AppCompatActivity {
         Runnable t = new Timer();
         time = new Thread(t);
         time.start();
+
+        SharedPreferences sp = getSharedPreferences("highscore.txt", MODE_PRIVATE);
+        lastHighScore = sp.getInt("highscorebeat", highScore);
+        highScore = lastHighScore;
     }
 }

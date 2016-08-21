@@ -22,13 +22,15 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
 
     Thread tim;
 
+    boolean here = true;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acupcakequestion);
 
-      //  Runnable ti = new timer();
-      //  tim = new Thread(ti);
-      //  tim.start();
+        Runnable ti = new timer();
+        tim = new Thread(ti);
+        tim.start();
 
         A = (RadioButton)findViewById(R.id.radioButtonA);
         A.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -85,24 +87,25 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
                 Intent i = new Intent(ACupcakeQuestionActivity.this, BCupCakeQuestionActivity.class);
                 startActivity(i);
                 finish();
+                here = false;
             }
         });
     }
-/*
+
     class timer implements Runnable{
         @Override
         public void run() {
             while(t != 10) {
                 SystemClock.sleep(1000);
                 t++;
-                break;
             }
-            if(t == 10){
+            if(t == 10 && here){
                 Intent i = new Intent(ACupcakeQuestionActivity.this, BCupCakeQuestionActivity.class);
                 startActivity(i);
                 finish();
+                here = false;
 
             }
         }
-    }*/
+    }
 }

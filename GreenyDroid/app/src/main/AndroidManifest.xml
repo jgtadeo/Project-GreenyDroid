@@ -19,6 +19,7 @@
         <activity android:name=".SettingActivity"></activity>
         <activity android:name=".AboutActivity"></activity>
         <activity android:name=".StartActivity"></activity>
+
         <activity android:name=".IntroductionActivity"></activity>
         <activity android:name=".ACupcakeStoryActivity"></activity>
         <activity android:name=".BCupcakeStoryActivity"></activity>
@@ -33,6 +34,23 @@
         <activity android:name=".CupcakeMiniGame"></activity>
         <activity android:name=".MiniGameContinueActivity"></activity>
         <activity android:name=".MiniGameOver"></activity>
+
+        <activity android:name=".BetweenCandDActivity"></activity>
+
+        <activity android:name=".DonutIntroductionActivity"></activity>
+        <activity android:name=".ADonutStoryActivity"></activity>
+        <activity android:name=".BDonutStoryActivity"></activity>
+        <activity android:name=".CDonutStoryActivity"></activity>
+        <activity android:name=".DonutIntroduction2Activity"></activity>
+        <activity android:name=".ADonutQuestionActivity"></activity>
+        <activity android:name=".BDonutQuestionActivity"></activity>
+        <activity android:name=".CDonutQuestionActivity"></activity>
+        <activity android:name=".DonutResultActivity"></activity>
+        <activity android:name=".DonutIntroduction3Activity"></activity>
+        <activity android:name=".DonutInstructionActivity"></activity>
+        <activity android:name=".DonutMiniGame"></activity>
+        <activity android:name=".DonutMiniGameContinue"></activity>
+        <activity android:name=".DonutMiniGameOver"></activity>
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package ph.edu.apc.greenydroid;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +17,19 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
 
     static RadioButton A, B, C, D;
 
+    int t = 0;
+
+    Thread tim;
+
+    boolean here = true;
+
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ccupcakequestion);
 
-
+        Runnable ti = new timer();
+        tim = new Thread(ti);
+        tim.start();
 
         A = (RadioButton)findViewById(R.id.radioButtonA);
         A.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -77,7 +86,24 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
                 Intent i = new Intent(CCupcakeQuestionActivity.this, CupcakeResultActivity.class);
                 startActivity(i);
                 finish();
+                here = false;
             }
         });
+    }
+    class timer implements Runnable{
+        @Override
+        public void run() {
+            while(t != 10) {
+                SystemClock.sleep(1000);
+                t++;
+            }
+            if(t == 10 && here){
+                Intent i = new Intent(CCupcakeQuestionActivity.this, CupcakeResultActivity.class);
+                startActivity(i);
+                finish();
+                here = false;
+
+            }
+        }
     }
 }
