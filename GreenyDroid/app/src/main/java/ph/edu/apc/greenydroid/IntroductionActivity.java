@@ -20,7 +20,7 @@ public class IntroductionActivity extends AppCompatActivity {
         Button begin = (Button)findViewById(R.id.btnBegin);
         begin.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(IntroductionActivity.this, ACupcakeStoryActivity.class);
+                Intent i = new Intent(IntroductionActivity.this, AStoryActivity.class);
                 startActivity(i);
                 finish();
             }

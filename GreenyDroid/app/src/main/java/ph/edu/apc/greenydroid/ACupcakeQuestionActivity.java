@@ -1,18 +1,18 @@
 package ph.edu.apc.greenydroid;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.SystemClock;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
-import android.widget.TextView;
 
 /**
- * Created by Renzo on 13/08/2016.
+ * Created by Renzo on 22/08/2016.
  */
 public class ACupcakeQuestionActivity extends AppCompatActivity {
 
@@ -24,7 +24,8 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
 
     boolean here = true;
 
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acupcakequestion);
 
@@ -37,6 +38,9 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
+                    SharedPreferences sp = getSharedPreferences("QuestionCupcake",MODE_PRIVATE);
+                    SharedPreferences.Editor spsave = sp.edit();
+                    spsave.commit();
                     nextButton();
                 }else{
                     nextButton();
@@ -59,9 +63,6 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    SharedPreferences sp = getSharedPreferences("QuestionCupcake",MODE_PRIVATE);
-                    SharedPreferences.Editor spsave = sp.edit();
-                    spsave.commit();
                     nextButton();
                 }else{
                     nextButton();
@@ -84,14 +85,13 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
         Button next = (Button)findViewById(R.id.btnNext);
         next.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupCakeQuestionActivity.class);
+                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupcakeQuestionActivity.class);
                 startActivity(i);
                 finish();
                 here = false;
             }
         });
     }
-
     class timer implements Runnable{
         @Override
         public void run() {
@@ -100,7 +100,7 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
                 t++;
             }
             if(t == 10 && here){
-                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupCakeQuestionActivity.class);
+                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupcakeQuestionActivity.class);
                 startActivity(i);
                 finish();
                 here = false;

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -11,11 +12,11 @@ import android.widget.CompoundButton;
 import android.widget.RadioButton;
 
 /**
- * Created by Renzo on 13/08/2016.
+ * Created by Renzo on 22/08/2016.
  */
 public class CCupcakeQuestionActivity extends AppCompatActivity {
 
-    static RadioButton A, B, C, D;
+    static RadioButton A, B, C ,D;
 
     int t = 0;
 
@@ -23,7 +24,8 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
 
     boolean here = true;
 
-    protected void onCreate(Bundle savedInstanceState){
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ccupcakequestion);
 
@@ -58,6 +60,9 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
+                    SharedPreferences sp = getSharedPreferences("QuestionCupcake",MODE_PRIVATE);
+                    SharedPreferences.Editor spsave = sp.edit();
+                    spsave.commit();
                     nextButton();
                 }else{
                     nextButton();
@@ -69,9 +74,6 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    SharedPreferences sp = getSharedPreferences("QuestionCupcake",MODE_PRIVATE);
-                    SharedPreferences.Editor spsave = sp.edit();
-                    spsave.commit();
                     nextButton();
                 }else{
                     nextButton();
@@ -98,7 +100,7 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
                 t++;
             }
             if(t == 10 && here){
-                Intent i = new Intent(CCupcakeQuestionActivity.this, CupcakeResultActivity.class);
+                Intent i = new Intent(CCupcakeQuestionActivity.this, CupcakeCalculatingActivity.class);
                 startActivity(i);
                 finish();
                 here = false;

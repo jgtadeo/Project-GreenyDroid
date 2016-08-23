@@ -20,7 +20,7 @@ public class Introduction2Activity extends AppCompatActivity {
         begin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Introduction2Activity.this, ACupcakeQuestionActivity.class);
+                Intent i = new Intent(Introduction2Activity.this, AQuestionActivity.class);
                 startActivity(i);
                 finish();
             }
