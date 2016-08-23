@@ -37,7 +37,8 @@
         <activity android:name=".MiniGameContinueActivity"></activity>
         <activity android:name=".MiniGameOver"></activity>
 
-        <activity android:name=".BetweenCandDActivity"></activity>
+        <activity android:name=".IntroToCupcakeActivity"></activity>
+        
         <activity android:name=".ACupcakeStoryActivity"></activity>
         <activity android:name=".BCupcakeStoryActivity"></activity>
         <activity android:name=".CCupcakeStoryActivity"></activity>
@@ -47,10 +48,12 @@
         <activity android:name=".CupcakeCalculatingActivity"></activity>
         <activity android:name=".CupcakeResultR"></activity>
         <activity android:name=".CupcakeResultC"></activity>
-
+        <activity android:name=".CupcakeInstructionsActivity"></activity>
         <activity android:name=".CupCakeMiniGameActivity"></activity>
         <activity android:name=".CupcakeMiniGameContinueActivity"></activity>
         <activity android:name=".CupcakeMiniGameOverActivity"></activity>
+        
+        <activity android:name=".IntroToDonutActivity"></activity>
 
     </application>
 

@@ -85,7 +85,7 @@ public class CCupcakeQuestionActivity extends AppCompatActivity {
         Button next = (Button)findViewById(R.id.btnNext);
         next.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(CCupcakeQuestionActivity.this, CupcakeResultActivity.class);
+                Intent i = new Intent(CCupcakeQuestionActivity.this, CupcakeCalculatingActivity.class);
                 startActivity(i);
                 finish();
                 here = false;

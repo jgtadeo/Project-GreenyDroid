@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
     private int bgdChecked = SettingActivity.bgdCheck;
     private int bgdChecked1 = AboutActivity.bgdCheck1;
     private int bgdChecked2 = MiniGameOver.bgdCheck2;
+    private int bgdChecked3 = CupcakeMiniGameOverActivity.bgdCheck3;
+    private int bgdChecked4 = MiniGameContinueActivity.bgdCheck4;
+    private int bgdChecked5 = CupcakeMiniGameContinueActivity.bgdCheck5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,32 +29,18 @@ public class MainActivity extends AppCompatActivity {
         if (bgdChecked == 0) {
             if(bgdChecked1 == 0) {
                 if(bgdChecked2 == 0) {
-                    bgdMusic = MediaPlayer.create(this, R.raw.tiptoe);
-                    bgdMusic.setLooping(true);
-                    bgdMusic.start();
+                    if(bgdChecked3 == 0) {
+                        if(bgdChecked4 == 0) {
+                            if(bgdChecked5 == 0) {
+                                bgdMusic = MediaPlayer.create(this, R.raw.tiptoe);
+                                bgdMusic.setLooping(true);
+                                bgdMusic.start();
+                            }
+                        }
+                    }
                 }
             }
         }
-
-
-       /* Button setting = (Button) findViewById(R.id.btnSetting);
-        setting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, SettingActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });
-
-        Button about = (Button) findViewById(R.id.btnAbout);
-        about.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, AboutActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });*/
     }
 
     private void settingButton() {
