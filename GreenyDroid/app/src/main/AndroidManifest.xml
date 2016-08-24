@@ -9,6 +9,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,6 +55,22 @@
         <activity android:name=".CupcakeMiniGameOverActivity"></activity>
         
         <activity android:name=".IntroToDonutActivity"></activity>
+
+        <activity android:name=".ADonutStoryActivty"></activity>
+        <activity android:name=".BDonutStoryActivity"></activity>
+        <activity android:name=".CDonutStoryActivity"></activity>
+        <activity android:name=".DDonutStoryActivity"></activity>
+        <activity android:name=".DonutIntro2Activity"></activity>
+        <activity android:name=".ADonutQuestion"></activity>
+        <activity android:name=".BDonutQuestion"></activity>
+        <activity android:name=".CDonutQuestion"></activity>
+        <activity android:name=".DonutCalculating"></activity>
+        <activity android:name=".DonutResultR"></activity>
+        <activity android:name=".DonutResultC"></activity>
+        <activity android:name=".DonutInstruction"></activity>
+        <activity android:name=".DonutMiniGame"></activity>
+        <activity android:name=".DonutMiniGameOver"></activity>
+        <activity android:name=".DonutMiniGameContinue"></activity>
 
     </application>
 
