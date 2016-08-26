@@ -33,44 +33,39 @@
         <activity android:name=".CalculatingResultActivity"></activity>
         <activity android:name=".ResultRetryActivity"></activity>
         <activity android:name=".ResultCongratulationActivity"></activity>
+
+        <activity android:name=".IntroToCupcakeActivity"></activity>
+        <activity android:name=".ACupcakeQuestionActivity"></activity>
+        <activity android:name=".BCupcakeQuestion"></activity>
+        <activity android:name=".BCupcakeAnswers"></activity>
+        <activity android:name=".CupcakeCalculatingActivity"></activity>
+        <activity android:name=".CupcakeResultR"></activity>
+        <activity android:name=".ACupcakeStoryActivity"></activity>
+
+        <activity android:name=".ADonutQuestion"></activity>
+        <activity android:name=".BDonutQuestion"></activity>
+        <activity android:name=".DonutCalculating"></activity>
+        <activity android:name=".DonutResultR"></activity>
+        <activity android:name=".ADonutStory"></activity>
+
+        <activity android:name=".AEclairQuestion"></activity>
+        <activity android:name=".AEclairStory"></activity>
+        <activity android:name=".EclairResultR"></activity>
+
+
+
         <activity android:name=".InstructionActivity"></activity>
         <activity android:name=".MiniGameActivity"></activity>
         <activity android:name=".MiniGameContinueActivity"></activity>
         <activity android:name=".MiniGameOver"></activity>
 
-        <activity android:name=".IntroToCupcakeActivity"></activity>
-        
-        <activity android:name=".ACupcakeStoryActivity"></activity>
-        <activity android:name=".BCupcakeStoryActivity"></activity>
-        <activity android:name=".CCupcakeStoryActivity"></activity>
-        <activity android:name=".ACupcakeQuestionActivity"></activity>
-        <activity android:name=".BCupcakeQuestionActivity"></activity>
-        <activity android:name=".CCupcakeQuestionActivity"></activity>
-        <activity android:name=".CupcakeCalculatingActivity"></activity>
-        <activity android:name=".CupcakeResultR"></activity>
-        <activity android:name=".CupcakeResultC"></activity>
+
         <activity android:name=".CupcakeInstructionsActivity"></activity>
         <activity android:name=".CupCakeMiniGameActivity"></activity>
         <activity android:name=".CupcakeMiniGameContinueActivity"></activity>
         <activity android:name=".CupcakeMiniGameOverActivity"></activity>
         
-        <activity android:name=".IntroToDonutActivity"></activity>
 
-        <activity android:name=".ADonutStoryActivty"></activity>
-        <activity android:name=".BDonutStoryActivity"></activity>
-        <activity android:name=".CDonutStoryActivity"></activity>
-        <activity android:name=".DDonutStoryActivity"></activity>
-        <activity android:name=".DonutIntro2Activity"></activity>
-        <activity android:name=".ADonutQuestion"></activity>
-        <activity android:name=".BDonutQuestion"></activity>
-        <activity android:name=".CDonutQuestion"></activity>
-        <activity android:name=".DonutCalculating"></activity>
-        <activity android:name=".DonutResultR"></activity>
-        <activity android:name=".DonutResultC"></activity>
-        <activity android:name=".DonutInstruction"></activity>
-        <activity android:name=".DonutMiniGame"></activity>
-        <activity android:name=".DonutMiniGameOver"></activity>
-        <activity android:name=".DonutMiniGameContinue"></activity>
 
     </application>
 

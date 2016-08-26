@@ -38,9 +38,6 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    SharedPreferences sp = getSharedPreferences("QuestionCupcake",MODE_PRIVATE);
-                    SharedPreferences.Editor spsave = sp.edit();
-                    spsave.commit();
                     nextButton();
                 }else{
                     nextButton();
@@ -52,6 +49,9 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
+                    SharedPreferences sp = getSharedPreferences("QuestionCupcake",MODE_PRIVATE);
+                    SharedPreferences.Editor spsave = sp.edit();
+                    spsave.commit();
                     nextButton();
                 }else{
                     nextButton();
@@ -85,7 +85,7 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
         Button next = (Button)findViewById(R.id.btnNext);
         next.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupcakeQuestionActivity.class);
+                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupcakeQuestion.class);
                 startActivity(i);
                 finish();
                 here = false;
@@ -100,11 +100,10 @@ public class ACupcakeQuestionActivity extends AppCompatActivity {
                 t++;
             }
             if(t == 10 && here){
-                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupcakeQuestionActivity.class);
+                Intent i = new Intent(ACupcakeQuestionActivity.this, BCupcakeQuestion.class);
                 startActivity(i);
                 finish();
                 here = false;
-
             }
         }
     }

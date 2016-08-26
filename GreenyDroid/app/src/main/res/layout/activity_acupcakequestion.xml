@@ -5,7 +5,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/cupcakequestion1"
+        android:background="@drawable/cupcakeq"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -28,7 +28,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="a. February 9, 2009"
+            android:text="a. Cheese Cake"
             android:id="@+id/radioButtonA"
             android:checked="false"
             android:layout_alignParentBottom="true"
@@ -38,7 +38,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="b. February 8, 2009"
+            android:text="b. Cupcake"
             android:id="@+id/radioButtonB"
             android:layout_marginTop="10dp"
             android:layout_alignTop="@+id/radioButtonA"
@@ -49,7 +49,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="c. February 9, 2007"
+            android:text="c. Cookie"
             android:id="@+id/radioButtonC"
             android:checked="false"
             android:layout_marginTop="10dp"
@@ -61,7 +61,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="d. February 9, 2010"
+            android:text="d. Custartd"
             android:id="@+id/radioButtonD"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/radioButtonC"

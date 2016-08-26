@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private int bgdChecked3 = CupcakeMiniGameOverActivity.bgdCheck3;
     private int bgdChecked4 = MiniGameContinueActivity.bgdCheck4;
     private int bgdChecked5 = CupcakeMiniGameContinueActivity.bgdCheck5;
-    private int bgdChecked6 = DonutMiniGameOver.bgdCheck6;
 
 
     @Override
@@ -34,11 +33,9 @@ public class MainActivity extends AppCompatActivity {
                     if(bgdChecked3 == 0) {
                         if(bgdChecked4 == 0) {
                             if(bgdChecked5 == 0) {
-                                if(bgdChecked6 == 0) {
                                     bgdMusic = MediaPlayer.create(this, R.raw.tiptoe);
                                     bgdMusic.setLooping(true);
                                     bgdMusic.start();
-                                }
                             }
                         }
                     }
