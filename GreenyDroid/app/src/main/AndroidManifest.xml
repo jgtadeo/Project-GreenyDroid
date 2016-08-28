@@ -50,15 +50,30 @@
 
         <activity android:name=".AEclairQuestion"></activity>
         <activity android:name=".AEclairStory"></activity>
+        <activity android:name=".BEclairQuestion"></activity>
         <activity android:name=".EclairResultR"></activity>
-
-
 
         <activity android:name=".InstructionActivity"></activity>
         <activity android:name=".MiniGameActivity"></activity>
         <activity android:name=".MiniGameContinueActivity"></activity>
         <activity android:name=".MiniGameOver"></activity>
 
+        <activity android:name=".AFroyoQuestion"></activity>
+        <activity android:name=".AFroyoChoices"></activity>
+        <activity android:name=".BFroyoQuestion"></activity>
+        <activity android:name=".FroyoCalculating"></activity>
+        <activity android:name=".FroyoResultR"></activity>
+        <activity android:name=".AFroyoStory"></activity>
+        <activity android:name=".CFroyoQuestion"></activity>
+
+        <activity android:name=".AGingerQuestion"></activity>
+        <activity android:name=".GingerResultR"></activity>
+        <activity android:name=".AGingerStory"></activity>
+        <activity android:name=".BGingerQuestion"></activity>
+
+        <activity android:name=".AHoneyQuestion"></activity>
+        <activity android:name=".HoneyResultR"></activity>
+        <activity android:name=".AHoneyStory"></activity>
 
         <activity android:name=".CupcakeInstructionsActivity"></activity>
         <activity android:name=".CupCakeMiniGameActivity"></activity>
