@@ -11,11 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".WelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".SettingActivity"></activity>
@@ -79,8 +75,32 @@
         <activity android:name=".CupCakeMiniGameActivity"></activity>
         <activity android:name=".CupcakeMiniGameContinueActivity"></activity>
         <activity android:name=".CupcakeMiniGameOverActivity"></activity>
-        
 
+        <activity android:name=".AIceCreamStory"></activity>
+        <activity android:name=".BIceCreamStory"></activity>
+        <activity android:name=".AIceCreamQuestion"></activity>
+        <activity android:name=".BIceCreamQuestion"></activity>
+        <activity android:name=".IceCreamCalculating"></activity>
+        <activity android:name=".IceCreamResultR"></activity>
+
+        <activity android:name=".AJellyStory"></activity>
+        <activity android:name=".AJellyQuestion"></activity>
+        <activity android:name=".JellyResultR"></activity>
+        <activity android:name=".BJellyStory"></activity>
+        <activity android:name=".CJellyStory"></activity>
+
+        <activity android:name=".AKitkatQuestion"></activity>
+        <activity android:name=".KitkatResultR"></activity>
+        <activity android:name=".AKitkatStory"></activity>
+        <activity android:name=".BKitkatStory"></activity>
+
+        <activity android:name=".LastMiniGame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 
