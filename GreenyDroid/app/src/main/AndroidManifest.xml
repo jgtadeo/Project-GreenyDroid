@@ -11,7 +11,11 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".SettingActivity"></activity>
@@ -28,7 +32,6 @@
         <activity android:name=".CQuestionActivity"></activity>
         <activity android:name=".CalculatingResultActivity"></activity>
         <activity android:name=".ResultRetryActivity"></activity>
-        <activity android:name=".ResultCongratulationActivity"></activity>
 
         <activity android:name=".IntroToCupcakeActivity"></activity>
         <activity android:name=".ACupcakeQuestionActivity"></activity>
@@ -94,13 +97,9 @@
         <activity android:name=".AKitkatStory"></activity>
         <activity android:name=".BKitkatStory"></activity>
 
-        <activity android:name=".LastMiniGame">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".LastInstructions"></activity>
+        <activity android:name=".LastMiniGame"></activity>
+        <activity android:name=".LastMiniGameCongrats"></activity>
 
     </application>
 

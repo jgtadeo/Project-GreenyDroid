@@ -22,6 +22,7 @@ public class SettingActivity extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        scoreButton();
         backButton();
 
         music = (CheckBox) findViewById(R.id.checkBox);
@@ -50,6 +51,17 @@ public class SettingActivity extends AppCompatActivity {
                 bgdCheck = 1;
                 Intent i = new Intent(SettingActivity.this, MainActivity.class);
                 startActivity(i);
+                finish();
+            }
+        });
+    }
+    private void scoreButton(){
+        Button score = (Button)findViewById(R.id.btnScore);
+        score.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(SettingActivity.this, LastMiniGameCongrats.class);
+                startActivity(j);
                 finish();
             }
         });
