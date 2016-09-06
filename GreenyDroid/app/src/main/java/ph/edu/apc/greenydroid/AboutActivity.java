@@ -2,6 +2,7 @@ package ph.edu.apc.greenydroid;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.widget.Button;
 public class AboutActivity extends AppCompatActivity {
 
     public static int bgdCheck1 = 0;
+    MediaPlayer bgmusic = MainActivity.bgdMusic;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,5 +34,10 @@ public class AboutActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        bgmusic.stop();
     }
 }

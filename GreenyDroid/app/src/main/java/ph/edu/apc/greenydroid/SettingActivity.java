@@ -2,7 +2,9 @@ package ph.edu.apc.greenydroid;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,6 +18,7 @@ import android.widget.CompoundButton;
 public class SettingActivity extends AppCompatActivity {
 
     public static int bgdCheck = 0;
+    MediaPlayer bgmusic = MainActivity.bgdMusic;
     static CheckBox music;
 
     @Override
@@ -36,7 +39,6 @@ public class SettingActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     music.setChecked(true);
-                    MainActivity.bgdMusic.start();
                 } else {
                     music.setChecked(false);
                     MainActivity.bgdMusic.pause();
@@ -65,6 +67,11 @@ public class SettingActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        bgmusic.stop();
     }
 }
 

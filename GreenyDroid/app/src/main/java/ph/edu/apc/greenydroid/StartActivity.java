@@ -23,9 +23,6 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        editName = (EditText) findViewById(R.id.editName);
-        name = editName.getText().toString();
-
         Toast.makeText(StartActivity.this, "WARNING! without name, score will not be displayed.", Toast.LENGTH_LONG).show();
 
         continueButton();
@@ -37,11 +34,14 @@ public class StartActivity extends AppCompatActivity {
                 Intent i = new Intent(StartActivity.this, IntroductionActivity.class);
                 editName = (EditText) findViewById(R.id.editName);
                 name = editName.getText().toString();
+                SharedPreferences sp = getSharedPreferences("name.txt",MODE_PRIVATE);
+                SharedPreferences.Editor spsave = sp.edit();
+                spsave.putString("Name", name);
+                spsave.commit();
                 startActivity(i);
                 finish();
             }
         });
     }
 }
-
 
