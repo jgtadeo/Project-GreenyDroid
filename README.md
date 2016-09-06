@@ -1,2 +1,2 @@
 # Project-GreenyDroid
-Mobprog(Java)
+Project in Mobile Programming
